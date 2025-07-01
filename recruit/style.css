@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #009094;
+  }
+  
+  main {
+    padding-top: 80px; /* ヘッダー固定分の余白 */
+  }
+  
+  .hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #009094, #00b4db);
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 10px;
+    }
+    .nav-links a {
+      margin: 5px 10px 0 0;
+    }
+  }
+
+  .recruitment {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.recruitment h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.job-buttons button {
+  margin: 5px 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #009094;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-buttons button:hover {
+  background-color: #009411;
+}
+
+.about-uplife {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  font-size: 1.0rem;
+  line-height: 1.8;
+}
